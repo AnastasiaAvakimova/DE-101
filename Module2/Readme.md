@@ -8,3 +8,10 @@
 - [x] [returns.txt](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module2/returns.txt)
 
 ## SQL запросы
+- [x] [SQL requests.txt](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module2/SQL%20requests.txt)
+
+## Нарисовать модель данных в SQLdbm
+
+## Нарисовать графики в Google Sheets
+
+## Нарисовать графики в KlipFolio
