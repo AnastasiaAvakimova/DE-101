@@ -1,0 +1,80 @@
+--Overview (обзор ключевых метрик)
+
+--join 3 tables
+select * from orders o 
+left join people p on o.region = p.region 
+left join "returns" r on r.order_id = o.order_id 
+limit 10
+
+--Total Sales and Profit by Year
+select extract(year from order_date) as year, sum(sales) as sales, sum(profit) as profit
+from orders o 
+group by year
+order by year
+
+--Profit Ratio by Category
+select category, sum(profit) / sum(sales) as profit_ratio
+from orders o 
+group by category 
+
+--Profit per Order
+select order_id, sum(profit) as profit
+from orders o 
+group by order_id 
+order by profit desc 
+
+--Sales per Customer, where sales > 10000
+select customer_id, sum(sales) as sales
+from orders o 
+group by customer_id
+having sum(sales) >= 10000
+order by sales desc
+
+--Avg. Discount by Sub-Category
+select subcategory, avg(discount) 
+from orders o 
+group by subcategory 
+
+--Monthly Sales by Segment
+select extract(month from order_date) as month, segment, sum(sales) as sales
+from orders o 
+group by extract(month from order_date), o.segment 
+order by extract(month  from order_date), o.segment
+
+--Monthly Sales by Product Category
+select extract(month from order_date) as month, category,  sum(sales) as sales
+from orders o 
+group by extract(month from order_date), o.category 
+order by extract(month from order_date), o.category 
+
+--Product Dashboard (Продуктовые метрики)
+--Sales by Product Category over time (Продажи по категориям)
+
+select category, sum(sales) as sales
+from orders o 
+group by o.category 
+order by o.category 
+
+--Customer Analysis
+--Sales and Profit by Customer
+select customer_name, sum(sales) as sales, sum(profit) as profit
+from orders o 
+group by customer_name
+order by customer_name
+
+--Customer Ranking
+select ROW_NUMBER() OVER(ORDER BY avg(profit) desc) AS Row, customer_name, avg(profit) as profit
+from orders o
+group by customer_name 
+ 
+--Sales per region
+select region, sum(sales) as sales
+from orders o 
+group by region 
+order by sales desc
+
+
+
+
+
+
