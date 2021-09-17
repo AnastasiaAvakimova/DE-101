@@ -11,7 +11,7 @@
 - [x] [SQL requests.txt](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module2/SQL%20requests.txt)
 
 ## Нарисовать модель данных в SQLdbm
-![](/static/модель_данных.jpg)
+![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module2//модель_данных.PNG?raw=true)
 ## Нарисовать графики в Google Sheets
 
 ## Нарисовать графики в KlipFolio
