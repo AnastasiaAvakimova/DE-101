@@ -26,3 +26,8 @@
 ![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task3.2.PNG)
 
 ![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task3.3.PNG)
+
+### Задание 4
+Переведены все продажи в Евро по курсу ЦБ на момент выполнения задания
+
+![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task4.2.PNG)
