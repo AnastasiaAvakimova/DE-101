@@ -17,3 +17,12 @@
 ![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task2.1.PNG)
 
 ![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task2.2.PNG)
+
+### Задание 3
+Создана мера, которая позволит сравнивать темпы прироста продаж с периодом -7 и -14 дней от текущей даты
+
+![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task3.1.PNG)
+
+![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task3.2.PNG)
+
+![alt text](https://github.com/AnastasiaAvakimova/DE-101/blob/main/Module3/images/task3.3.PNG)
